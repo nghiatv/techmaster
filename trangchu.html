@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techmaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+
+    <!--link font awesome-->
+    <!--<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" >-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,100,100italic,300,300italic,500,500italic,700,900,900italic&subset=vietnamese' rel='stylesheet' type='text/css'>
+
+
+    <!--import Marterilize-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
+
+    <!--Captcha-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+
+
+<!--Header-->
+
+<header class="page-header">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="" class="brand-logo "><img
+                            src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png" alt=""></a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
+                                                                                       style="color: rgba(33, 23, 34, 0.96)"></i></a>
+
+                    <div class="right hide-on-med-and-down">
+                        <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
+                           id="signup-navbar" onclick="show_form_login1()">login</a>
+                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                           onclick="show_form_register1()">sign up</a>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="tab" href="">Thực tập</a></li>
+                        <li><a class="tab" href="">Khóa học</a></li>
+                        <li><a class="tab" href="">Việc làm</a></li>
+                        <li><a class="tab" href="">Team</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-nav">
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Docs</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">About</a></li>
+                        <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
+                           id="signup-mobile-navbar" onclick="show_form_register1()">sign up</a>
+                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                           onclick="show_form_login1()">login</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+</header>
+
+
+<!--Main-->
+<main>
+    <div class="row">
+    <div id="main_row_1" class="col s12 m12 l6 hide-on-small-and-down">
+        <div class="row">
+            <div class="col s12 slider hide-on-small-and-down">
+                <ul class="slides">
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Tại sao nên bắt đầu với Techmaster</h3>
+                            <h5 class="light grey-text text-lighten-3 hide-on-small-and-down">Chúng tôi bao gồm đội ngũ tăng
+                                động</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12">
+                <div class="dashboard">
+
+                        <div class="row">
+                            <div class="col s12 m3 dashboard_item">
+                                <h3 class="center"><strong>40+</strong></h3>
+
+                                <p class="center">Bai hoc truc tuyen</p>
+                            </div>
+                            <div class="col s12 m3 dashboard_item">
+                                <h3 class="center"><strong>35 +</strong></h3>
+                                <p class="center">Thoi luong video</p></div>
+                            <div class="col s12 m3 dashboard_item">
+                                <h3 class="center"><strong>80+</strong></h3>
+
+                                <p class="center">Vi du cu the</p>
+                            </div>
+                            <div class="col s12 m3 dashboard_item">
+                                <h3 class="center"><strong>50+</strong></h3>
+
+                                <p class="center">tips</p>
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--<div id="main_row_3" class="row">-->
+        <!--&lt;!&ndash;<div class="container center-align">&ndash;&gt;-->
+            <!--&lt;!&ndash;<h2> Bat dau code voi chung toi</h2>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<p>rat nhieu cai gi day dang cho ban</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+    <div id="main_row_4" class="col s12 m12 l6">
+        <div class="row">
+            <div class="col s12 m6 ">
+                <div class="path-item card white darken-3 light-blue-text">
+                    <div href= "" class="badge valign-wrapper">
+                        <img src="ruby.svg" class="circle responsive-img center-align z-depth-1" alt="Ruby" title="Ruby">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="path-title truncate center-align">HTML5, CSS3 và Javascript</h2>
+                        <p class="center-align">Khóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C: cập nhật công nghệ mới, nhiều mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
+                    </div>
+                    <div class="path-button center-align">
+                        <a href="" class="waves-effect waves-light btn deep-orange">View course</a>
+                    </div>
+
+
+                    <!--<div class="divider"></div>-->
+                    <div class="bucket row light-green white-text">
+                        <div class="bucket-media col s4">
+                            <img src=" http://techmaster.vn/img/users/trinh-minh-cuong.jpg" class=" circle responsive-img center-align z-depth-1" alt="dang quang huy" title="buket" style="max-width: 80px">
+                        </div>
+                        <div class="bucket-content col s8">
+                            <p class="bucket-label">Giảng viên hướng dẫn: </p>
+                            <p class="bucket-content">Robin Huy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 ">
+                <div class="path-item card white darken-3 light-blue-text">
+                    <div href= "" class="badge valign-wrapper">
+                        <img src="ruby.svg" class="circle responsive-img center-align z-depth-1" alt="Ruby" title="Ruby">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="path-title truncate center-align">HTML5, CSS3 và Javascript</h2>
+                        <p class="center-align">Khóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C: cập nhật công nghệ mới, nhiều mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
+                    </div>
+                    <div class="path-button center-align">
+                        <a href="" class="waves-effect waves-light btn deep-orange">View course</a>
+                    </div>
+
+
+                    <!--<div class="divider"></div>-->
+                    <div class="bucket row light-blue white-text">
+                        <div class="bucket-media col s4">
+                            <img src=" http://techmaster.vn/img/users/trinh-minh-cuong.jpg" class=" circle responsive-img center-align z-depth-1" alt="dang quang huy" title="buket" style="max-width: 80px">
+                        </div>
+                        <div class="bucket-content col s8">
+                            <p class="bucket-label">Giảng viên hướng dẫn: </p>
+                            <p class="bucket-content">Robin Huy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 ">
+                <div class="path-item card white darken-3 light-blue-text">
+                    <div href= "" class="badge valign-wrapper">
+                        <img src="ruby.svg" class="circle responsive-img center-align z-depth-1" alt="Ruby" title="Ruby">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="path-title truncate center-align">HTML5, CSS3 và Javascript</h2>
+                        <p class="center-align">Khóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C: cập nhật công nghệ mới, nhiều mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
+                    </div>
+                    <div class="path-button center-align">
+                        <a href="" class="waves-effect waves-light btn deep-orange">View course</a>
+                    </div>
+
+
+                    <!--<div class="divider"></div>-->
+                    <div class="bucket row red white-text">
+                        <div class="bucket-media col s4">
+                            <img src=" http://techmaster.vn/img/users/trinh-minh-cuong.jpg" class=" circle responsive-img center-align z-depth-1" alt="dang quang huy" title="buket" style="max-width: 80px">
+                        </div>
+                        <div class="bucket-content col s8">
+                            <p class="bucket-label">Giảng viên hướng dẫn: </p>
+                            <p class="bucket-content">Robin Huy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 ">
+                <div class="path-item card white darken-3 light-blue-text">
+                    <div href= "" class="badge valign-wrapper">
+                        <img src="ruby.svg" class="circle responsive-img center-align z-depth-1" alt="Ruby" title="Ruby">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="path-title truncate center-align">HTML5, CSS3 và Javascript</h2>
+                        <p class="center-align">Khóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C: cập nhật công nghệ mới, nhiều mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
+                    </div>
+                    <div class="path-button center-align">
+                        <a href="" class="waves-effect waves-light btn deep-orange">View course</a>
+                    </div>
+
+
+                    <!--<div class="divider"></div>-->
+                    <div class="bucket row amber white-text">
+                        <div class="bucket-media col s4">
+                            <img src=" http://techmaster.vn/img/users/trinh-minh-cuong.jpg" class=" circle responsive-img center-align z-depth-1" alt="dang quang huy" title="buket" style="max-width: 80px">
+                        </div>
+                        <div class="bucket-content col s8">
+                            <p class="bucket-label">Giảng viên hướng dẫn: </p>
+                            <p class="bucket-content">Robin Huy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 ">
+                <div class="path-item card white darken-3 light-blue-text">
+                    <div href= "" class="badge valign-wrapper">
+                        <img src="ruby.svg" class="circle responsive-img center-align z-depth-1" alt="Ruby" title="Ruby">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="path-title truncate center-align">HTML5, CSS3 và Javascript</h2>
+                        <p class="center-align">Khóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C: cập nhật công nghệ mới, nhiều mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
+                    </div>
+                    <div class="path-button center-align">
+                        <a href="" class="waves-effect waves-light btn deep-orange">View course</a>
+                    </div>
+
+
+                    <!--<div class="divider"></div>-->
+                    <div class="bucket row light-blue white-text">
+                        <div class="bucket-media col s4">
+                            <img src=" http://techmaster.vn/img/users/trinh-minh-cuong.jpg" class=" circle responsive-img center-align z-depth-1" alt="dang quang huy" title="buket" style="max-width: 80px">
+                        </div>
+                        <div class="bucket-content col s8">
+                            <p class="bucket-label">Giảng viên hướng dẫn: </p>
+                            <p class="bucket-content">Robin Huy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6 ">
+            <div class="path-item card white darken-3 light-blue-text">
+                <div href= "" class="badge valign-wrapper">
+                    <img src="ruby.svg" class="circle responsive-img center-align z-depth-1" alt="Ruby" title="Ruby">
+                </div>
+                <div class="card-content">
+                    <h2 class="path-title truncate center-align">HTML5, CSS3 và Javascript</h2>
+                    <p class="center-align">Khóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C hóa học lập trình iOS Objective-C: cập nhật công nghệ mới, nhiều mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
+                </div>
+                <div class="path-button center-align">
+                    <a href="" class="waves-effect waves-light btn deep-orange">View course</a>
+                </div>
+
+
+                <!--<div class="divider"></div>-->
+                <div class="bucket row light-blue white-text">
+                    <div class="bucket-media col s4">
+                        <img src=" http://techmaster.vn/img/users/trinh-minh-cuong.jpg" class=" circle responsive-img center-align z-depth-1" alt="dang quang huy" title="buket" style="max-width: 80px">
+                    </div>
+                    <div class="bucket-content col s8">
+                        <p class="bucket-label">Giảng viên hướng dẫn: </p>
+                        <p class="bucket-content">Robin Huy</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    </div>
+</main>
+
+
+<!--Footer-->
+<footer>
+
+
+    <div id="footer__main" class="blue-grey darken-3 white-text   ">
+        <article class="fit-fixed">
+
+            <div class="row padding-top--half">
+
+                <div class="col m4 s12 footer_m4">
+                    <img alt="Logo__bottom" class="lighten-5" id="footer__logo"
+                         src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"/>
+
+                    <p><i class="fa fa-map-marker"></i> Cơ sở 1:
+                        Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</p>
+
+                    <p>
+                        <i class="fa fa-map-marker"></i> Cơ sở 2:
+                        Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội
+                    </p>
+
+                    <div id="footer__company__links">
+
+                        <a href="https://www.facebook.com/techmastervn"><i class="fa fa-2x fa-facebook"></i>
+                        </a>
+                        <a href=""><i class="fa fa-2x fa-twitter"></i>
+                        </a>
+                        <a href=""><i class="fa fa-2x fa-instagram"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col m8 s12 row ">
+                    <div class="col m4">
+                        <h5><strong>Về TechmasterVn</strong></h5>
+                        <ul>
+                            <li><a href="">Về chúng tôi</a></li>
+                            <li><a href="">Việc làm</a></li>
+                            <li><a href="">Thực tập</a></li>
+                            <li><a href="">Đặt câu hỏi cho chúng tôi</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+
+                        <h5 class="margin-top--1"><strong>Tài nguyên</strong></h5>
+                        <ul>
+                            <li><a href="/articles">Arrowjs</a></li>
+                            <li><a href="/schools">Ebook</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col m8 s12">
+                        <h5><strong>Learn To Code</strong></h5>
+
+                        <div class='row'>
+
+                            <div class="col m7">
+                                <ul>
+                                    <li>
+                                        <a href="/">Lập trình iOS Objective-C</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Web cơ bản HTML5, CSS3 và Javascript</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Node.js xây dựng web site tốc độ cao</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lập trình Arrowjs Core và CMS</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Java căn bản thực hành</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Learn the Command Line</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Learn SQL</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lập trình Python ứng dụng thực tế</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col m5">
+                                <ul>
+                                    <li><a href="">HTML &amp; CSS</a></li>
+                                    <li><a href="">JavaScript</a></li>
+                                    <li><a href="">jQuery</a></li>
+                                    <li><a href="">PHP</a></li>
+                                    <li><a href="">Python</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+        <a class="btn-floating btn-large waves-effect waves-light btn modal-trigger" href="#modal1">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+    </div>
+
+</footer>
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="s12 center-align"><img src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                                               alt="Techmaster" title="Techmaster"></div>
+        </div>
+        <div class="row">
+            <div class="col s12  ">
+                <div class="mdl_form">
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+                            <!--<i class="large material-icons prefix">email</i>-->
+                            <!-- Trik: **readonly onfocus="$(this).removeAttr('readonly');"** slouží k odstranění uložených přihlašovacích údajů prohlížečem -->
+                            <input type="email" name="email" maxlength="30" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <!--<i class="mdi-communication-vpn-key prefix"></i>-->
+                            <input type="password" id="heslo" name="heslo" maxlength="30" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+                        <div class="center-align mdl_button">
+                            <button type="submit" class="waves-effect waves-light btn mdl_submit"><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn" id="registrace"
+                                    onclick="show_form_register()"><i class="mdi-social-person-add left"></i>Đăng kí
+                                miễn phĩ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl_form_register" style="display: none;">
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+                            <!--<i class="large material-icons prefix">email</i>-->
+                            <!-- Trik: **readonly onfocus="$(this).removeAttr('readonly');"** slouží k odstranění uložených přihlašovacích údajů prohlížečem -->
+                            <input type="email" name="email" maxlength="30" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <!--<i class="mdi-communication-vpn-key prefix"></i>-->
+                            <input type="password" name="pass" maxlength="30" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+                        <!--repassword-->
+                        <div class="input-field">
+                            <!--<i class="mdi-communication-vpn-key prefix"></i>-->
+                            <input type="password" name="repass" maxlength="30" class="validate" required>
+                            <label for="repass">Repassword</label>
+                        </div>
+
+
+                        <div class="center-align">
+                            <div class="g-recaptcha" data-sitekey="6LcL0RITAAAAAGN_prn2qh7rGi9AS-3EtUPjhy7B"></div>
+                        </div>
+
+
+                        <div class="center-align mdl_button">
+                            <button class="waves-effect waves-light btn mdl_submit" onclick=""><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn" id="registrace"
+                                    onclick="show_form_login()"><i class="mdi-social-person-add left"></i>Trở lại đăng
+                                nhập
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col s12 center-align">
+                <a href="#" class="">Quên mật khẩu?</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+
+    function show_form_login() {
+        $(".mdl_form_register").hide(600);
+        $(".mdl_form").show(600);
+
+    }
+    function show_form_login1() {
+        $(".mdl_form_register").hide();
+        $(".mdl_form").show();
+
+    }
+    function show_form_register() {
+//        alert("dss");
+        $(".mdl_form").hide(600);
+        $(".mdl_form_register").show(600);
+    }
+    function show_form_register1() {
+//        alert("dss");
+        $(".mdl_form").hide();
+        $(".mdl_form_register").show();
+    }
+
+    function show_more() {
+        $(".hide").addClass("animated");
+        $(".hide").addClass("fadeInUp");
+        $(".mbl").removeClass("hide");
+
+        $(".show_more").addClass("hide");
+    }
+
+    $(document).ready(function () {
+        $('.slider').slider({
+            full_width: true,
+
+        });
+    });
+    $(document).ready(function(){
+        $(".badge").hover(
+                function(){
+                    $(this  ).addClass("animated").addClass("pulse");
+                },
+                function () {
+                    $(this).removeClass("animated").removeClass("pulse");
+                }
+        );
+    })
+    $(document).ready(function () {
+        $('.modal-trigger').leanModal({
+                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                    opacity: .6, // Opacity of modal background
+                    in_duration: 300, // Transition in duration
+                    out_duration: 200, // Transition out duration
+
+                }
+        );
+    });
+
+    //    Slider
+
+    $(document).ready(function () {
+        $('.slider').slider({
+            indicators: false,
+            height: 400,
+            full_width: true,
+        });
+    });
+
+
+    //    sideNav
+
+    $(document).ready(function () {
+
+        $(".button-collapse").sideNav();
+
+    });
+
+    //    collapsible
+
+
+    document.ready(function () {
+        $('.collapsible').collapsible({
+            accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
+
+
+</script>
+</body>
+</html>

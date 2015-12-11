@@ -1,0 +1,127 @@
+html{
+    line-height: 1.5;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    color: #121212;
+}
+
+body{
+    min-height: 2000px;
+    box-sizing: border-box;
+    background-color: #e9eaea;
+
+}
+.page-header{
+    margin: 0;
+    padding:0;
+    background-color: #fff;
+}
+
+nav .nav-wrapper {
+    padding: 0 30px;
+    background-color: #FFF;
+}
+.brand-logo img{
+    max-height: 44px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+nav ul a{
+    display: inline-block;
+    font-style: 1.5rem;
+    padding: 0 15px;
+    color: #aaa !important;
+}
+nav ul li:hover, nav ul li:focus{
+    background-color: #fff;
+}
+nav ul li:hover a{
+    color: #000 !important;
+    border-bottom: 3px solid #fcff40;
+    transition: all .3s;
+}
+#main_row_1{
+    background-color: #fff;
+}
+#main_row_2{
+    position: relative;
+}
+#back2course{
+    margin-top: 40px;
+    width: 70%;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+#back2course span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#center-title{
+    width: 66.667%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+@media (min-width: 600px) {
+    #center-title{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+}
+
+#center-title h3{
+    font-weight: 300;
+}
+#center-title p{
+    font-weight: 200;
+    font-size: 1.1em;
+}
+#center-title .center{
+    font-weight: 300;
+}
+.dashboard{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-top: 1px solid #d4d5d6;
+}
+.dashboard_item{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-left: 1px solid #d4d5d6;
+}
+.dashboard_item:last-child{
+    border-right: 1px solid #d4d5d6;;
+}
+.dashboard_item h3{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-top:0 !important;
+    margin-bottom: 0 !important;
+}
+.dashboard_item p{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.row{
+    margin-bottom: 0 !important;
+}
+#triangle{
+    margin-top: -1px;
+    margin-bottom: 50px;
+}
+
+#course_des{
+    box-shadow: none;
+}
+#course_des img{
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+#author_course{
+    box-shadow: none;
+    background-color: white !important;
+}
+#card-title{
+    padding-bottom: 20px !important;
+}
